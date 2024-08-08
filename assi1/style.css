@@ -1,0 +1,153 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #94c1f7;
+}
+
+.background {
+    position: relative;
+}
+
+.todo-container {
+  
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    width: 500px;
+    position: relative;
+    height: 500px;
+}
+
+.todo-container h1 {
+    text-align: center;
+    color: #333;
+}
+
+.search-container, .add-task-container {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.search-container input, .add-task-container input {
+    width: calc(100% - 100px);
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.filter-container, .add-task-container button {
+    display: flex;
+    align-items: center;
+    margin-left: 10px;
+}
+
+
+.filter-container select, .filter-container button {
+    padding: 10px;
+    margin-left: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: #f0f0f0;
+    color: #54a0ff;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    overflow-y: auto;
+}
+
+li {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+    width: 400px;
+}
+
+li input[type="checkbox"] {
+    margin-right: 10px;
+}
+
+li .todo-text {
+    flex: 1;
+}
+
+li .done {
+    text-decoration: line-through;
+    color: #aaa;
+}
+
+li .delete-btn {
+    background-color: transparent;
+    border: none;
+    color: red;
+    cursor: pointer;
+}
+
+.add-btn {
+    background-color: #9b59b6;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    font-size: 24px;
+    cursor: pointer;
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.add-btn:hover {
+    background-color: #8e44ad;
+}
+
+
+
+body.dark-mode {
+    background-color: #333;
+}
+
+body.dark-mode .todo-container.dark-mode {
+    background-color: #555;
+    color: white;
+}
+
+.dark-mode {
+    background-color: #555;
+    color: white;
+}
+
+body.dark-mode .search-container input, 
+body.dark-mode .add-task-container input {
+    background-color: #777;
+    color: white;
+    border: 1px solid #444;
+    
+}
+
+body.dark-mode .filter-container select, 
+body.dark-mode .filter-container button {
+    background-color: #777;
+    color: white;
+    ;
+}
+
+body.dark-mode .add-btn {
+    background-color: #6c5ce7;
+}
+
+body.dark-mode .add-btn:hover {
+    background-color: #5a4ec7;
+}
