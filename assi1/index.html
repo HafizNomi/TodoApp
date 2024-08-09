@@ -15,16 +15,21 @@
                 <div class="filter-container">
                     <select id="filter">
                         <option value="all">ALL</option>
+                        <option value="completed">Completed</option>
+                        <option value="incomplete">Incomplete</option>
                     </select>
-                    <button id="dark-mode-toggle">🌙</button>
+                    
+                    <button id="dark-mode-toggle">
+                        <img src="Moon-White.png" alt="Dark Mode" class="moon-icon">
+                    </button>
                 </div>
             </div>
             <div class="add-task-container">
                 <input type="text" id="new-task-input" placeholder="Add new task...">
             </div>
-            <div>
-            <ul id="todo-list"></ul>
-            </div>
+            <div class="scrollable-todo-list">
+                <ul class="todo-list" id="todo-list"></ul>
+              </div>
         </div>
         <button class="add-btn" id="add-task-btn">+</button>
     </div>

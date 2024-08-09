@@ -45,9 +45,9 @@ body, html {
 .filter-container, .add-task-container button {
     display: flex;
     align-items: center;
-    margin-left: 10px;
+    margin-left: 5px;
+    width: -30px;
 }
-
 
 .filter-container select, .filter-container button {
     padding: 10px;
@@ -55,14 +55,23 @@ body, html {
     border: 1px solid #ccc;
     border-radius: 5px;
     cursor: pointer;
-    background-color: #f0f0f0;
-    color: #54a0ff;
+    /* background-color: #f0f0f0; */
+    background-color: rgba(10, 10, 192, 0.856);
+    color: aliceblue;
+}
+.moon-icon {
+    width: 17px; /* Adjust size as needed */
+    height: 17px;
+    vertical-align: middle;
+}
+.scrollable-todo-list {
+    max-height: 300px; 
+    overflow-y: auto;
 }
 
-ul {
+.todo-list {
     list-style: none;
     padding: 0;
-    overflow-y: auto;
 }
 
 li {
@@ -71,7 +80,8 @@ li {
     justify-content: space-between;
     padding: 10px;
     border-bottom: 1px solid #ccc;
-    width: 400px;
+    width: 350px;
+    margin-left: 40px;
 }
 
 li input[type="checkbox"] {
@@ -93,9 +103,8 @@ li .delete-btn {
     color: red;
     cursor: pointer;
 }
-
 .add-btn {
-    background-color: #9b59b6;
+    background-color: rgba(10, 10, 192, 0.856);
     color: white;
     border: none;
     border-radius: 50%;
@@ -105,12 +114,12 @@ li .delete-btn {
     cursor: pointer;
     position: absolute;
     bottom: 10px;
-    right: 10px;
+    right: 40px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 .add-btn:hover {
-    background-color: #8e44ad;
+    background-color: rgba(10, 10, 192, 0.856);
 }
 
 
